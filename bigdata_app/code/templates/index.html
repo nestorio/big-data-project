@@ -6,13 +6,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Bluesky template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/bootstrap4/bootstrap.min.css') }}">
+<link href="{{ url_for('static', filename='plugins/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.carousel.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.theme.default.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/animate.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main_styles.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/responsive.css') }}">
 </head>
 <body>
 
@@ -26,7 +26,7 @@
                 <div class="col">
                     <div class="header_content d-flex flex-row align-items-center justify-content-start">
                         <div class="logo">
-                            <a href="#"><img src="images/logo.png" alt=""></a>
+                            <a href="#"><img src="{{ url_for('static', filename='images/logo.png') }}" alt=""></a>
                         </div>
                         <nav class="main_nav">
                             <ul>
@@ -57,7 +57,7 @@
 			<div class="logo menu_logo">
 				<a href="#">
 					<div class="logo_container d-flex flex-row align-items-start justify-content-start">
-						<div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
+						<div class="logo_image"><div><img src="{{ url_for('static', filename='images/logo.png') }}" alt=""></div></div>
 					</div>
 				</a>
 			</div>
@@ -82,7 +82,7 @@
 				
 				<!-- Slide -->
 				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/immobilier.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url({{ url_for('static', filename='images/immobilier.jpg') }})"></div>
 					<div class="slide_container">
 						<div class="container">
 							<div class="row">
@@ -120,7 +120,7 @@
 
 				<!-- Slide -->
 				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/vehicules.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url({{ url_for('static', filename='images/vehicules.jpg') }})"></div>
 					<div class="slide_container">
 						<div class="container">
 							<div class="row">
@@ -156,7 +156,7 @@
 
 				<!-- Slide -->
 				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/electroniques.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url({{ url_for('static', filename='css/style1.css') }}images/electroniques.jpg)"></div>
 					<div class="slide_container">
 						<div class="container">
 							<div class="row">
@@ -266,7 +266,7 @@
 								<div class="recent_item">
 									<div class="recent_item_inner">
 										<div class="recent_item_image">
-											<img src="images/property_1.jpg" alt="">
+											<img src="{{ url_for('static', filename='images/property_1.jpg') }}" alt="">
 											<div class="tag_featured property_tag"><a href="#">Immobilier</a></div>
 										</div>
 										<div class="recent_item_body text-center">
@@ -286,7 +286,7 @@
 								<div class="recent_item">
 									<div class="recent_item_inner">
 										<div class="recent_item_image">
-											<img src="images/property_2.jpg" alt="">
+											<img src="{{ url_for('static', filename='images/property_2.jpg') }}" alt="">
 											<div class="tag_offer property_tag"><a href="#">Vehicule</a></div>
 										</div>
 										<div class="recent_item_body text-center">
@@ -306,7 +306,7 @@
 								<div class="recent_item">
 									<div class="recent_item_inner">
 										<div class="recent_item_image">
-											<img src="images/property_3.jpg" alt="">
+											<img src="{{ url_for('static', filename='images/property_3.jpg') }}" alt="">
 											<div class="tag_featured property_tag"><a href="#">Vetement</a></div>
 										</div>
 										<div class="recent_item_body text-center">
@@ -350,7 +350,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_1.jpg" alt="https://unsplash.com/@dnevozhai">
+				<img src="{{ url_for('static', filename='images/city_1.jpg') }}" alt="https://unsplash.com/@dnevozhai">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Abomey</div>
@@ -361,7 +361,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_2.jpg" alt="https://unsplash.com/@lachlanjdempsey">
+				<img src="{{ url_for('static', filename='images/city_2.jpg') }}" alt="https://unsplash.com/@lachlanjdempsey">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Allada</div>
@@ -372,7 +372,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_3.jpg" alt="https://unsplash.com/@hellolightbulb">
+				<img src="{{ url_for('static', filename='images/city_3.jpg') }}" alt="https://unsplash.com/@hellolightbulb">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Aplahoué</div>
@@ -383,7 +383,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_4.jpg" alt="https://unsplash.com/@justinbissonbeck">
+				<img src="{{ url_for('static', filename='images/city_4.jpg') }}" alt="https://unsplash.com/@justinbissonbeck">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Cotonou</div>
@@ -394,7 +394,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_5.jpg" alt="https://unsplash.com/@claudiotrigueros">
+				<img src="{{ url_for('static', filename='images/city_5.jpg') }}" alt="https://unsplash.com/@claudiotrigueros">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Dassa-Zoumé</div>
@@ -405,7 +405,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_6.jpg" alt="https://unsplash.com/@andersjilden">
+				<img src="{{ url_for('static', filename='images/city_6.jpg') }}" alt="https://unsplash.com/@andersjilden">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Djougou</div>
@@ -416,7 +416,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_7.jpg" alt="https://unsplash.com/@sawyerbengtson">
+				<img src="{{ url_for('static', filename='images/city_7.jpg') }}" alt="https://unsplash.com/@sawyerbengtson">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Kandi</div>
@@ -427,7 +427,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_8.jpg" alt="https://unsplash.com/@mathewwaters">
+				<img src="{{ url_for('static', filename='images/city_8.jpg') }}" alt="https://unsplash.com/@mathewwaters">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Lokossa</div>
@@ -438,7 +438,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_8.jpg" alt="https://unsplash.com/@mathewwaters">
+				<img src="{{ url_for('static', filename='images/city_8.jpg') }}" alt="https://unsplash.com/@mathewwaters">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Natitingou</div>
@@ -449,7 +449,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_8.jpg" alt="https://unsplash.com/@mathewwaters">
+				<img src="{{ url_for('static', filename='images/city_8.jpg') }}" alt="https://unsplash.com/@mathewwaters">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Parakou</div>
@@ -460,7 +460,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_8.jpg" alt="https://unsplash.com/@mathewwaters">
+				<img src="{{ url_for('static', filename='images/city_8.jpg') }}" alt="https://unsplash.com/@mathewwaters">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Pobè</div>
@@ -471,7 +471,7 @@
 
 			<!-- City -->
 			<div class="city">
-				<img src="images/city_8.jpg" alt="https://unsplash.com/@mathewwaters">
+				<img src="{{ url_for('static', filename='images/city_8.jpg') }}" alt="https://unsplash.com/@mathewwaters">
 				<div class="city_overlay">
 					<a href="#" class="d-flex flex-column align-items-center justify-content-center">
 						<div class="city_title">Porto-Novo</div>
@@ -499,7 +499,7 @@
 					<div class="testimonial">
 						<div class="testimonial_title">J'ai échangé mon parcelle de Terre</div>
 						<div class="testimonial_text">J'avais essayé de vendre ce pays depuis si longtemps à Allada. Grâce à TrocBenin, j'ai échangé le terrain contre un autre à Cotonou sans effort </div>
-						<div class="testimonial_author_image"><img src="images/testimonial_1.jpg" alt=""></div>
+						<div class="testimonial_author_image"><img src="{{ url_for('static', filename='images/testimonial_1.jpg') }}" alt=""></div>
 						<div class="testimonial_author"><a href="#">Nestor Gnoguem</a><span>, Client</span></div>
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
@@ -510,7 +510,7 @@
 					<div class="testimonial">
 						<div class="testimonial_title">Facile à Troquer</div>
 						<div class="testimonial_text">Honnêtement, c’est l’une des plateformes les plus simples que j’ai jamais utilisées en ligne. J'aime aussi l'équipe de support en ligne toujours disponible de TrocBenin</div>
-						<div class="testimonial_author_image"><img src="images/testimonial_2.jpg" alt=""></div>
+						<div class="testimonial_author_image"><img src="{{ url_for('static', filename='images/testimonial_2.jpg') }}" alt=""></div>
 						<div class="testimonial_author"><a href="#">Isaac Hounge</a><span>, Client</span></div>
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
@@ -521,7 +521,7 @@
 					<div class="testimonial">
 						<div class="testimonial_title">Très bonne communication</div>
 						<div class="testimonial_text">Cette plateforme m'informe toujours de l'état de mon Troc. Je suis averti chaque fois que quelqu'un propose quelque chose et c'est incroyable</div>
-						<div class="testimonial_author_image"><img src="images/testimonial_3.jpg" alt=""></div>
+						<div class="testimonial_author_image"><img src="{{ url_for('static', filename='images/testimonial_3.jpg') }}" alt=""></div>
 						<div class="testimonial_author"><a href="#">Aziz</a><span>, Client</span></div>
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
@@ -534,7 +534,7 @@
 	<!-- Newsletter -->
 
 	<div class="newsletter">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ url_for('static', filename='images/newsletter.jpg') }}" data-speed="0.8"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -562,7 +562,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3">
-						<div class="footer_logo"><a href="#"><img src="images/logo_large.png" alt=""></a></div>
+						<div class="footer_logo"><a href="#"><img src="{{ url_for('static', filename='images/logo_large.png') }}" alt=""></a></div>
 					</div>
 					<div class="col-lg-9 d-flex flex-column align-items-start justify-content-end">
 						<div class="footer_title">Dernières trocs</div>
@@ -576,7 +576,7 @@
 					</div>
 					<div class="col-lg-3 footer_col">
 						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
-							<div><div class="footer_latest_image"><img src="images/footer_latest_1.jpg" alt=""></div></div>
+							<div><div class="footer_latest_image"><img src="{{ url_for('static', filename='images/footer_latest_1.jpg') }}" alt=""></div></div>
 							<div class="footer_latest_content">
 								<div class="footer_latest_location">Porto-Novo</div>
 								<div class="footer_latest_name"><a href="#">Grande maison</a></div>
@@ -586,7 +586,7 @@
 					</div>
 					<div class="col-lg-3 footer_col">
 						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
-							<div><div class="footer_latest_image"><img src="images/footer_latest_2.jpg" alt=""></div></div>
+							<div><div class="footer_latest_image"><img src="{{ url_for('static', filename='images/footer_latest_2.jpg') }}" alt=""></div></div>
 							<div class="footer_latest_content">
 								<div class="footer_latest_location">Cotonou</div>
 								<div class="footer_latest_name"><a href="#">Camry 2015</a></div>
@@ -596,7 +596,7 @@
 					</div>
 					<div class="col-lg-3 footer_col">
 						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
-							<div><div class="footer_latest_image"><img src="images/footer_latest_3.jpg" alt=""></div></div>
+							<div><div class="footer_latest_image"><img src="{{ url_for('static', filename='images/footer_latest_3.jpg') }}" alt=""></div></div>
 							<div class="footer_latest_content">
 								<div class="footer_latest_location">Abomey</div>
 								<div class="footer_latest_name"><a href="#">Parcelle de terre</a></div>
@@ -634,12 +634,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='styles/bootstrap4/popper.js') }}"></script>
+<script src="{{ url_for('static', filename='styles/bootstrap4/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/easing/easing.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/parallax-js-master/parallax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 </html>
